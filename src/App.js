@@ -1,10 +1,16 @@
 import "./styles.css";
+import "animate.css/animate.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Banner from "./components/Banner";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <Navbar />
+      <Banner />
+      <About />
+    </>
   );
 }

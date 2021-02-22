@@ -1,4 +1,125 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+body {
+  font-family: Roboto, sans-serif;
+}
+:root {
+  --brand-light: #4d5164;
+  --brand-primary: #333646;
+  --brand-dark: #252734;
+  --card: #424657;
+  --brand-yellow: #ffc15c;
+  --brand-white: #fff;
+  --brand-text: #999aa2;
+}
+.navbar {
+  min-height: 100px;
+  background-color: var(--brand-primary) !important;
+  color: var(--brand-white);
+}
+.navbar .nav-item {
+  font-size: 24px;
+}
+.profile {
+  background-color: var(--brand-primary);
+  color: var(--brand-white);
+}
+.about {
+  background-color: var(--brand-dark);
+  color: var(--brand-white);
+}
+.profile__left {
+  position: relative;
+}
+.profile__left .profile__img {
+  width: 100%;
+  max-width: 400px;
+}
+.profile__left .profile__title {
+  position: absolute;
+  top: 4rem;
+  font-size: 68px;
+  width: 150px;
+  left: 0;
+  text-align: start;
+  border-bottom: solid 8px var(--brand-yellow);
+}
+
+.profile__sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profile__sec .profile__txt-1 {
+  color: var(--brand-yellow);
+  font-size: 60px;
+}
+
+.profile__link,
+.profile__link:hover {
+  cursor: pointer;
+  color: var(--brand-yellow);
+  font-size: 18px;
+  display: flex;
+}
+
+.profile__link-arrow {
+  margin-left: 6px;
+  transition: all 0.2s linear;
+}
+
+.profile__link:hover .profile__link-arrow {
+  transform: translateX(6px);
+}
+.profile__sec {
+  display: flex;
+}
+/* overrides */
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+.about__cards {
+  display: flex;
+  justify-content: center;
+}
+.about__cards .about__card {
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  background-color: var(--card);
+  min-height: 300px;
+}
+.about__cards .about__card:hover {
+  background-color: var(--brand-yellow);
+  border-top: solid 20px red;
+}
+.social__icons {
+  list-style: none;
+}
+.social__icons .social__icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .about {
+    height: 100vh;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
